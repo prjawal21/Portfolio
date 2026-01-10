@@ -1,0 +1,212 @@
+/* Vibrant Professional Theme for Portfolio */
+
+/* ===== Root Colors ===== */
+:root {
+    --primary-color: #7c3aed;
+    /* Vibrant purple */
+    --primary-hover: #6d28d9;
+    --secondary-color: #0ea5e9;
+    /* Bright cyan */
+    --accent-color: #f43f5e;
+    /* Pink-red */
+    --success-color: #10b981;
+    /* Green */
+    --warning-color: #f59e0b;
+    /* Orange */
+    --dark-color: #111827;
+    --light-color: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+}
+
+/* ===== Base ===== */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background: linear-gradient(135deg, #fdf2f8, #ecfeff, #eef2ff);
+    background-attachment: fixed;
+}
+
+/* ===== Navbar ===== */
+#navbar {
+    transition: var(--transition);
+}
+
+#navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Darker text when navbar is scrolled (light background) */
+#navbar.scrolled .nav-link {
+    color: #2B124C !important;
+}
+
+#navbar.scrolled .nav-link:hover {
+    color: #522B5B !important;
+}
+
+#navbar.scrolled h1 {
+    color: #2B124C !important;
+}
+
+#navbar.scrolled .fa-bars {
+    color: #2B124C !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #2B124C;
+    border-radius: 2px;
+}
+
+/* ===== Hero Section ===== */
+#home {
+    background: linear-gradient(135deg, #3b82f6, #9333ea, #ec4899);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    color: white;
+    position: relative;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== Cards ===== */
+.card,
+.project-card {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.card:hover,
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Gradient line on hover */
+.card::before,
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.card:hover::before,
+.project-card:hover::before {
+    transform: translateX(0);
+}
+
+/* ===== Skills Progress ===== */
+.skill-progress {
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+}
+
+/* ===== Timeline ===== */
+.timeline-item::before {
+    background: var(--accent-color);
+}
+
+/* ===== Scroll To Top ===== */
+.scroll-top {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: var(--shadow-lg);
+}
+
+.scroll-top:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* ===== Animations ===== */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
