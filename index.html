@@ -2,773 +2,387 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prajwal P - Software Engineer Portfolio</title>
-    <meta name="description"
-        content="Prajwal P - Software Engineering student specializing in backend and full stack development">
-
-    <!-- External CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-dark': '#190019',
-                        'primary-purple': '#2B124C',
-                        'primary-mauve': '#522B5B',
-                        'primary-rose': '#854F6C',
-                        'primary-pink': '#DFB6B2',
-                        'primary-light': '#FBE4D8',
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prajwal P | Computer Vision & ML Engineer</title>
+  <meta name="description"
+    content="Prajwal P: Computer Vision, Signal Processing & GenAI Engineer. B.Tech CSE, Presidency University. Multimodal ML research at Autoliv.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-primary-light">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-primary-dark/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300"
-        id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-bold" style="color: #FBE4D8;">Prajwal P</h1>
-                </div>
+<body>
 
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link transition-colors" style="color: #DFB6B2;"
-                        onmouseover="this.style.color='#FBE4D8'" onmouseout="this.style.color='#DFB6B2'">Home</a>
-                    <a href="#about" class="nav-link transition-colors" style="color: #DFB6B2;"
-                        onmouseover="this.style.color='#FBE4D8'" onmouseout="this.style.color='#DFB6B2'">About</a>
-                    <a href="#skills" class="nav-link transition-colors" style="color: #DFB6B2;"
-                        onmouseover="this.style.color='#FBE4D8'" onmouseout="this.style.color='#DFB6B2'">Skills</a>
-                    <a href="#projects" class="nav-link transition-colors" style="color: #DFB6B2;"
-                        onmouseover="this.style.color='#FBE4D8'" onmouseout="this.style.color='#DFB6B2'">Projects</a>
-                    <a href="#education" class="nav-link transition-colors" style="color: #DFB6B2;"
-                        onmouseover="this.style.color='#FBE4D8'" onmouseout="this.style.color='#DFB6B2'">Education</a>
-                    <a href="#contact" class="nav-link transition-colors" style="color: #DFB6B2;"
-                        onmouseover="this.style.color='#FBE4D8'" onmouseout="this.style.color='#DFB6B2'">Contact</a>
-                </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
 
-                <!-- Mobile menu button -->
-                <button class="md:hidden" id="mobile-menu-btn">
-                    <i class="fas fa-bars text-xl" style="color: #FBE4D8;"></i>
-                </button>
-            </div>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#home" class="topbar__mark">PP<span class="topbar__mark-dot">·</span></a>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#lab">Signal Lab</a>
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="topbar__cta">Get in touch</a>
+    </div>
+  </header>
 
-            <!-- Mobile Navigation -->
-            <div class="md:hidden hidden" id="mobile-menu">
-                <div class="px-2 pt-2 pb-3 space-y-1 bg-primary-dark border-t border-primary-purple">
-                    <a href="#home" class="mobile-nav-link block px-3 py-2 hover:bg-primary-purple rounded"
-                        style="color: #DFB6B2;">Home</a>
-                    <a href="#about" class="mobile-nav-link block px-3 py-2 hover:bg-primary-purple rounded"
-                        style="color: #DFB6B2;">About</a>
-                    <a href="#skills" class="mobile-nav-link block px-3 py-2 hover:bg-primary-purple rounded"
-                        style="color: #DFB6B2;">Skills</a>
-                    <a href="#projects" class="mobile-nav-link block px-3 py-2 hover:bg-primary-purple rounded"
-                        style="color: #DFB6B2;">Projects</a>
-                    <a href="#education" class="mobile-nav-link block px-3 py-2 hover:bg-primary-purple rounded"
-                        style="color: #DFB6B2;">Education</a>
-                    <a href="#contact" class="mobile-nav-link block px-3 py-2 hover:bg-primary-purple rounded"
-                        style="color: #DFB6B2;">Contact</a>
-                </div>
-            </div>
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="eyebrow">CH.1: SUBJECT IDENTIFICATION</p>
+        <h1 class="hero__title">
+          I turn noisy signals<br> into decisions a model<br> can trust.
+        </h1>
+        <p class="hero__subtitle">
+          Prajwal P, Multimodal ML &amp; Computer Vision Engineer in the making. Completed Computer Science and
+          Engineering at Presidency University, Bengaluru. I've spent the last year pulling signal out of noise:
+          literally, in IMU data at Autoliv, and figuratively, in retrieval pipelines and vision models.
+        </p>
+        <div class="hero__actions">
+          <a href="#lab" class="btn btn--primary">Try the Signal Lab ↓</a>
+          <a href="#work" class="btn btn--ghost">See the work</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
-        <!-- Terminal Effect Background -->
-        <div id="terminal-container" class="absolute inset-0 w-full h-full"></div>
-
-        <!-- Dark Overlay for Better Text Visibility -->
-        <div class="absolute inset-0 bg-black/70 z-[5]"></div>
-
-        <!-- Content Overlay -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="animate-fade-in">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl" style="color: #FBE4D8 !important;">
-                    Hi, I'm <span
-                        style="color: #DFB6B2 !important; text-shadow: 0 0 30px rgba(223, 182, 178, 0.8);">Prajwal
-                    </span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-xl" style="color: #FBE4D8 !important;">
-                    Computer Science Engineering Student & Full Stack Enthusiast
-                </p>
-                <p class="text-lg mb-10 max-w-2xl mx-auto drop-shadow-lg"
-                    style="color: #DFB6B2 !important; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);">
-                    Software engineering student specializing in backend and full stack development. Proficient in Java,
-                    Python, Spring Boot, and cloud platforms, with a focus on designing scalable systems, optimizing
-                    performance, and integrating AI/ML into real-world applications.
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                    <a href="#projects"
-                        class="bg-primary-pink hover:bg-primary-light text-primary-dark px-8 py-3 rounded-lg font-medium transition-all shadow-2xl hover:shadow-primary-pink/50 hover:scale-105">
-                        View My Work
-                    </a>
-                    <a href="#contact"
-                        class="border-2 border-primary-light text-primary-light hover:bg-primary-light hover:text-primary-dark px-8 py-3 rounded-lg font-medium transition-all shadow-xl backdrop-blur-sm hover:scale-105">
-                        Get In Touch
-                    </a>
-                </div>
-
-                <div class="flex justify-center space-x-6">
-                    <a href="https://github.com/prjawal21" target="_blank"
-                        class="text-primary-light hover:text-primary-pink text-2xl transition-colors drop-shadow-xl hover:scale-110 transform duration-200">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/prajwal-p-822169257/" target="_blank"
-                        class="text-primary-light hover:text-primary-pink text-2xl transition-colors drop-shadow-xl hover:scale-110 transform duration-200">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:prajwalp5078@gmail.com"
-                        class="text-primary-light hover:text-primary-pink text-2xl transition-colors drop-shadow-xl hover:scale-110 transform duration-200">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <dl class="hero__readout">
+          <div>
+            <dt>ROC-AUC</dt>
+            <dd>0.80</dd>
+          </div>
+          <div>
+            <dt>Sample rate</dt>
+            <dd>~6 kHz</dd>
+          </div>
+          <div>
+            <dt>Bandpass</dt>
+            <dd>1–80 Hz</dd>
+          </div>
+          <div>
+            <dt>RAG latency</dt>
+            <dd>&lt;1 s</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-primary-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-4">About Me</h2>
-                <p class="text-primary-mauve max-w-2xl mx-auto">
-                    Passionate software engineering student with hands-on experience in building scalable applications
-                </p>
-            </div>
+    <!-- SIGNAL LAB -->
+    <section id="lab" class="lab">
+      <p class="eyebrow">CH.2: TRY IT YOURSELF</p>
+      <h2 class="section-title">The Signal Lab</h2>
+      <p class="section-lede">
+        No live product demos to link to yet, so instead, here's the actual technique I built at
+        Autoliv, running in your browser. Raw IMU data is noisy, drifting, and full of sensor artifacts.
+        A Butterworth bandpass filter cleans it up before it ever reaches a model. Drag the sliders.
+      </p>
 
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-semibold text-primary-dark mb-6">My Journey</h3>
-                    <p class="text-primary-mauve mb-4">
-                        I'm a Computer Science Engineering student at Presidency University, Bangalore, with a strong
-                        passion for
-                        backend and full stack development. My journey in software development has been driven by
-                        curiosity and
-                        the desire to build applications that solve real-world problems.
-                    </p>
-                    <p class="text-primary-mauve mb-4">
-                        I have hands-on experience with Java, Python, Spring Boot, React, and cloud technologies like
-                        AWS.
-                        My expertise lies in building scalable backend systems, RESTful APIs, and integrating modern
-                        technologies
-                        like AI/ML into practical applications.
-                    </p>
-                    <p class="text-primary-mauve mb-6">
-                        I'm always eager to learn new technologies and contribute to innovative projects that make a
-                        difference.
-                    </p>
-
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="bg-primary-purple text-primary-light px-3 py-1 rounded-full text-sm font-medium">Problem
-                            Solving</span>
-                        <span
-                            class="bg-primary-mauve text-primary-light px-3 py-1 rounded-full text-sm font-medium">Clean
-                            Code</span>
-                        <span
-                            class="bg-primary-rose text-primary-light px-3 py-1 rounded-full text-sm font-medium">Continuous
-                            Learning</span>
-                        <span class="bg-primary-pink text-primary-dark px-3 py-1 rounded-full text-sm font-medium">Team
-                            Collaboration</span>
-                    </div>
-                </div>
-
-                <div class="bg-gradient-to-br from-primary-purple to-primary-mauve p-8 rounded-2xl shadow-xl">
-                    <h4 class="text-xl font-semibold text-primary-light mb-6">Quick Facts</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-center text-primary-pink">
-                            <i class="fas fa-map-marker-alt text-primary-light mr-3"></i>
-                            Based in Bangalore, India
-                        </li>
-                        <li class="flex items-center text-primary-pink">
-                            <i class="fas fa-graduation-cap text-primary-light mr-3"></i>
-                            B.Tech CSE Student (2022-2026)
-                        </li>
-                        <li class="flex items-center text-primary-pink">
-                            <i class="fas fa-code text-primary-light mr-3"></i>
-                            Backend & Full Stack Enthusiast
-                        </li>
-                        <li class="flex items-center text-primary-pink">
-                            <i class="fas fa-cloud text-primary-light mr-3"></i>
-                            AWS Cloud Enthusiast
-                        </li>
-                        <li class="flex items-center text-primary-pink">
-                            <i class="fas fa-robot text-primary-light mr-3"></i>
-                            AI/ML Integration Explorer
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="lab__panel">
+        <div class="lab__scope">
+          <canvas id="labCanvas" class="lab__canvas"></canvas>
+          <div class="lab__legend">
+            <span class="legend legend--raw"><i></i>Raw IMU signal</span>
+            <span class="legend legend--filtered"><i></i>Filtered output</span>
+          </div>
         </div>
+        <div class="lab__controls">
+          <div class="control">
+            <label for="lowCut">Low cutoff <span class="mono" id="lowCutVal">1 Hz</span></label>
+            <input type="range" id="lowCut" min="0.5" max="40" step="0.5" value="1">
+          </div>
+          <div class="control">
+            <label for="highCut">High cutoff <span class="mono" id="highCutVal">80 Hz</span></label>
+            <input type="range" id="highCut" min="20" max="150" step="1" value="80">
+          </div>
+          <div class="control">
+            <label for="noiseAmt">Sensor noise <span class="mono" id="noiseAmtVal">0.35</span></label>
+            <input type="range" id="noiseAmt" min="0" max="1" step="0.05" value="0.35">
+          </div>
+          <div class="readout-block">
+            <div><span class="mono readout-label">RMS (raw)</span><span class="mono" id="rmsRaw">-</span></div>
+            <div><span class="mono readout-label">RMS (filtered)</span><span class="mono" id="rmsFiltered">-</span>
+            </div>
+            <div><span class="mono readout-label">Rolling variance</span><span class="mono" id="rollVar">-</span></div>
+          </div>
+          <p class="lab__note">
+            This is a real 2nd-order Butterworth bandpass biquad running client-side. The same
+            class of filter I used to strip drift and noise from ~6 kHz IMU streams before feature
+            extraction (RMS, rolling variance) fed a dual-head CNN.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Skills & Technologies</h2>
-                <p class="text-primary-mauve max-w-2xl mx-auto">
-                    A comprehensive overview of my technical skills and proficiencies
-                </p>
-            </div>
+    <!-- WORK -->
+    <section id="work" class="work">
+      <p class="eyebrow">CH.3: FIELD NOTES</p>
+      <h2 class="section-title">Selected work</h2>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Programming Languages -->
-                <div
-                    class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-primary-pink">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-code text-primary-purple text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold text-primary-dark">Languages</h3>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary-mauve">Java</span>
-                            <div class="flex space-x-1">
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-pink rounded-full"></div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary-mauve">Python</span>
-                            <div class="flex space-x-1">
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-pink rounded-full"></div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary-mauve">JavaScript</span>
-                            <div class="flex space-x-1">
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-purple rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-pink rounded-full"></div>
-                                <div class="w-3 h-3 bg-primary-pink rounded-full"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Web Development -->
-                <div
-                    class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-primary-pink">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-globe text-primary-mauve text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold text-primary-dark">Web Development</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-primary-purple text-primary-light px-3 py-1 rounded-full text-sm">HTML</span>
-                        <span class="bg-primary-mauve text-primary-light px-3 py-1 rounded-full text-sm">CSS</span>
-                        <span class="bg-primary-rose text-primary-light px-3 py-1 rounded-full text-sm">React.js</span>
-                        <span class="bg-primary-pink text-primary-dark px-3 py-1 rounded-full text-sm">Spring
-                            Boot</span>
-                        <span class="bg-primary-purple text-primary-light px-3 py-1 rounded-full text-sm">FastAPI</span>
-                    </div>
-                </div>
-
-                <!-- Databases -->
-                <div
-                    class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-primary-pink">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-database text-primary-rose text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold text-primary-dark">Databases</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-primary-mauve text-primary-light px-3 py-1 rounded-full text-sm">MySQL</span>
-                        <span class="bg-primary-rose text-primary-light px-3 py-1 rounded-full text-sm">MongoDB</span>
-                    </div>
-                </div>
-
-                <!-- Core CS -->
-                <div
-                    class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-primary-pink">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-brain text-primary-purple text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold text-primary-dark">Core CS</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-primary-purple text-primary-light px-3 py-1 rounded-full text-sm">Data
-                            Structures</span>
-                        <span
-                            class="bg-primary-mauve text-primary-light px-3 py-1 rounded-full text-sm">Algorithms</span>
-                        <span class="bg-primary-rose text-primary-light px-3 py-1 rounded-full text-sm">OOP</span>
-                        <span class="bg-primary-pink text-primary-dark px-3 py-1 rounded-full text-sm">OS</span>
-                        <span class="bg-primary-purple text-primary-light px-3 py-1 rounded-full text-sm">Computer
-                            Networks</span>
-                    </div>
-                </div>
-
-                <!-- Cloud -->
-                <div
-                    class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-primary-pink">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-cloud text-primary-mauve text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold text-primary-dark">Cloud</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-primary-rose text-primary-light px-3 py-1 rounded-full text-sm">AWS EC2</span>
-                        <span class="bg-primary-pink text-primary-dark px-3 py-1 rounded-full text-sm">AWS S3</span>
-                    </div>
-                </div>
-
-                <!-- Other -->
-                <div
-                    class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-primary-pink">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-tools text-primary-rose text-2xl mr-3"></i>
-                        <h3 class="text-xl font-semibold text-primary-dark">Other</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-primary-mauve text-primary-light px-3 py-1 rounded-full text-sm">REST
-                            APIs</span>
-                        <span
-                            class="bg-primary-purple text-primary-light px-3 py-1 rounded-full text-sm">Git/GitHub</span>
-                    </div>
-                </div>
-            </div>
+      <article class="project project--flagship">
+        <div class="project__meta">
+          <span class="tag">Research Internship</span>
+          <span class="mono project__date">Mar – May 2026 · Autoliv, Bengaluru</span>
         </div>
+        <h3>Multimodal road surface classification</h3>
+        <p>
+          Built a system that classifies road surface quality (smooth vs. bumpy) by fusing IMU,
+          GPS, and video. High-frequency IMU signals (~6 kHz) were cleaned with Butterworth
+          bandpass filtering, then paired with a CLIP-based vision pipeline for hybrid labeling.
+          A dual-head CNN combined time-domain and frequency-domain features, reaching ~0.80
+          ROC-AUC after threshold-optimized false-positive reduction. Road quality was then
+          visualized as GPS-based heatmaps for spatial analysis.
+        </p>
+        <ul class="project__tags">
+          <li>PyTorch</li>
+          <li>OpenCV</li>
+          <li>CLIP</li>
+          <li>Signal Processing</li>
+          <li>CNN</li>
+        </ul>
+        <a href="#lab" class="project__link">↑ See the filter running live in the Signal Lab</a>
+      </article>
+
+      <div class="project-grid">
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">RAG · GenAI</span>
+          </div>
+          <h3>PGRKAM AI Assistant</h3>
+          <p>
+            A multilingual chatbot giving government employment guidance, grounded with a RAG
+            pipeline so answers stay restricted to verified domain knowledge. Runs on
+            LLaMA-3.3-70B via Groq at under 1 second per query, with speech-to-text and
+            text-to-speech for accessibility.
+          </p>
+          <div class="flow" aria-hidden="true">
+            <span>Query</span><span class="flow__arrow">→</span>
+            <span>Retriever</span><span class="flow__arrow">→</span>
+            <span>LLaMA-3.3-70B</span><span class="flow__arrow">→</span>
+            <span>Grounded answer</span>
+          </div>
+          <ul class="project__tags">
+            <li>React.js</li>
+            <li>FastAPI</li>
+            <li>MongoDB</li>
+            <li>Groq API</li>
+            <li>RAG</li>
+          </ul>
+          <a class="project__link" href="https://github.com/prjawal21/PGRKAM_AI_Assistant" target="_blank"
+            rel="noopener">View repository ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">Full Stack</span>
+          </div>
+          <h3>NoteKeeper</h3>
+          <p>
+            Full-stack notes manager with secure authentication and complete CRUD, built on a
+            validated MVC REST API and an indexed MySQL schema for query performance.
+          </p>
+          <ul class="project__tags">
+            <li>Spring Boot</li>
+            <li>React.js</li>
+            <li>MySQL</li>
+            <li>REST</li>
+          </ul>
+          <a class="project__link" href="https://github.com/prjawal21/NoteKeeper" target="_blank" rel="noopener">View
+            repository ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <span class="tag">SaaS · Hackathon</span>
+          </div>
+          <h3>VedaCare</h3>
+          <p>
+            Multi-tenant Ayurvedic diet management SaaS, built for Smart India Hackathon 2024
+            under the Ministry of Ayush. Role-based dashboards for patients, doctors, and admins
+            with personalised diet plan generation.
+          </p>
+          <ul class="project__tags">
+            <li>React.js</li>
+            <li>Spring Boot</li>
+            <li>MongoDB</li>
+            <li>Multi-tenant</li>
+          </ul>
+          <a class="project__link" href="https://github.com/prjawal21/ayurvedic-diet-management-system" target="_blank"
+            rel="noopener">View repository ↗</a>
+        </article>
+
+        <article class="project project--wip">
+          <span class="wip-badge mono">IN PROGRESS</span>
+          <div class="project__meta">
+            <span class="tag">Full Stack · Community</span>
+          </div>
+          <h3>DevForum</h3>
+          <p>
+            Reddit-style developer community platform with nested comments, voting,
+            and topic feeds. Spring Boot 3 REST API with a React frontend, currently
+            under active development.
+          </p>
+          <ul class="project__tags">
+            <li>Spring Boot 3</li>
+            <li>React.js</li>
+            <li>PostgreSQL</li>
+            <li>REST</li>
+          </ul>
+          <div class="project__links">
+            <a class="project__link" href="https://github.com/prjawal21/devforum-backend" target="_blank"
+              rel="noopener">Backend repo ↗</a>
+            <a class="project__link" href="https://github.com/prjawal21/devforum-frontend" target="_blank"
+              rel="noopener">Frontend repo ↗</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-primary-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Featured Projects</h2>
-                <p class="text-primary-mauve max-w-2xl mx-auto">
-                    A showcase of my recent projects demonstrating my skills in backend and full stack development
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1: PGRKAM AI Assistant -->
-                <div
-                    class="bg-white border-2 border-primary-pink rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-primary-dark">PGRKAM AI Assistant</h3>
-                            <a href="https://github.com/prjawal21/PGRKAM_AI_Assistant" target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-primary-mauve hover:text-primary-purple transition-colors"
-                                title="View on GitHub">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                        <p class="text-primary-mauve mb-4">
-                            Multilingual AI chatbot for government employment guidance. Built a RAG-based system over
-                            PGRKAM documents with domain-restricted responses and voice-based interaction.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary-mauve text-primary-light px-2 py-1 rounded text-xs">FastAPI</span>
-                            <span class="bg-primary-purple text-primary-light px-2 py-1 rounded text-xs">React.js</span>
-                            <span class="bg-primary-rose text-primary-light px-2 py-1 rounded text-xs">MongoDB</span>
-                            <span class="bg-primary-pink text-primary-dark px-2 py-1 rounded text-xs">Groq
-                                (LLaMA-3.3-70B)</span>
-                            <span class="bg-primary-purple text-primary-light px-2 py-1 rounded text-xs">RAG</span>
-                            <span class="bg-primary-mauve text-primary-light px-2 py-1 rounded text-xs">STT/TTS</span>
-                        </div>
-                        <div class="flex items-center text-sm text-primary-mauve">
-                            <i class="fas fa-code mr-2"></i>
-                            RAG Application
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: DevForum -->
-                <div
-                    class="bg-white border-2 border-primary-pink rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-primary-dark">DevForum</h3>
-                            <div class="flex items-center gap-3">
-                                <a href="https://github.com/prjawal21/devforum-frontend" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="text-primary-mauve hover:text-primary-purple transition-colors flex items-center gap-1"
-                                    title="Frontend Repository">
-                                    <i class="fab fa-github text-lg"></i>
-                                    <span class="text-xs">Frontend</span>
-                                </a>
-                                <a href="https://github.com/prjawal21/devforum-backend" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="text-primary-mauve hover:text-primary-purple transition-colors flex items-center gap-1"
-                                    title="Backend Repository">
-                                    <i class="fab fa-github text-lg"></i>
-                                    <span class="text-xs">Backend</span>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="text-primary-mauve mb-4">
-                            Scalable discussion platform inspired by Reddit/Quora. Supports authentication,
-                            upvotes/downvotes, threaded comments, and search with optimized MongoDB schemas and a
-                            responsive React UI.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary-mauve text-primary-light px-2 py-1 rounded text-xs">Spring
-                                Boot</span>
-                            <span class="bg-primary-rose text-primary-light px-2 py-1 rounded text-xs">React.js</span>
-                            <span class="bg-primary-purple text-primary-light px-2 py-1 rounded text-xs">MongoDB</span>
-                            <span class="bg-primary-pink text-primary-dark px-2 py-1 rounded text-xs">Full Stack</span>
-                        </div>
-                        <div class="flex items-center text-sm text-primary-mauve">
-                            <i class="fas fa-comments mr-2"></i>
-                            Scalable Web Platform
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: NoteKeeper Web App -->
-                <div
-                    class="bg-white border-2 border-primary-pink rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-primary-dark">NoteKeeper Web App</h3>
-                            <a href="https://github.com/prjawal21/NoteKeeper" target="_blank" rel="noopener noreferrer"
-                                class="text-primary-mauve hover:text-primary-purple transition-colors"
-                                title="View on GitHub">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                        <p class="text-primary-mauve mb-4">
-                            Notes management web application with secure authentication and full CRUD functionality.
-                            Implemented RESTful APIs using MVC architecture with validation, error handling, and
-                            database optimization.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary-mauve text-primary-light px-2 py-1 rounded text-xs">Spring
-                                Boot</span>
-                            <span class="bg-primary-rose text-primary-light px-2 py-1 rounded text-xs">React.js</span>
-                            <span class="bg-primary-purple text-primary-light px-2 py-1 rounded text-xs">MySQL</span>
-                            <span class="bg-primary-pink text-primary-dark px-2 py-1 rounded text-xs">REST API</span>
-                            <span class="bg-primary-mauve text-primary-light px-2 py-1 rounded text-xs">MVC</span>
-                        </div>
-                        <div class="flex items-center text-sm text-primary-mauve">
-                            <i class="fas fa-sticky-note mr-2"></i>
-                            API-Driven App
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <p class="eyebrow">CH.4: CALIBRATION</p>
+      <div class="about__grid">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p>
+            I'm a Computer Science Engineering graduating from Presidency University,
+            Bengaluru in 2026. My focus is computer vision, signal processing, and
+            multimodal machine learning. I like problems where the raw data is messy and the
+            job is figuring out what to trust in it.
+          </p>
+          <p>
+            That instinct came out of the Autoliv internship: 6 kHz sensor streams, drift, noise,
+            and the question of how to fuse them with vision and location data into something a
+            model can actually learn from. It's the same instinct I bring to RAG systems: knowing
+            what to retrieve, and what to leave out.
+          </p>
+          <p>
+            Outside of ML, I build backend systems in FastAPI and Spring Boot, and ship full-stack
+            apps in React. Useful when the model needs somewhere to live.
+          </p>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Education & Certifications</h2>
-                <p class="text-primary-mauve max-w-2xl mx-auto">
-                    My academic journey and professional certifications
-                </p>
-            </div>
-
-            <!-- Education Timeline -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-semibold text-primary-dark mb-8 text-center">Education</h3>
-                <div class="space-y-8">
-                    <!-- Bachelor's Degree -->
-                    <div
-                        class="flex flex-col md:flex-row items-start md:items-center bg-gradient-to-r from-primary-light to-white p-6 rounded-xl shadow-md border border-primary-pink">
-                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                            <div class="w-16 h-16 bg-primary-purple rounded-full flex items-center justify-center">
-                                <i class="fas fa-university text-primary-light text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="flex-grow">
-                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                                <div>
-                                    <h4 class="text-xl font-semibold text-primary-dark">Bachelor of Technology</h4>
-                                    <p class="text-primary-mauve">Computer Science and Engineering</p>
-                                    <p class="text-primary-purple font-medium">Presidency University, Bangalore</p>
-                                </div>
-                                <div class="text-right mt-2 md:mt-0">
-                                    <p class="text-primary-dark font-semibold">2022 - 2026</p>
-                                    <p class="text-primary-mauve">CGPA: 6.7/10</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Intermediate -->
-                    <div
-                        class="flex flex-col md:flex-row items-start md:items-center bg-gradient-to-r from-primary-light to-white p-6 rounded-xl shadow-md border border-primary-pink">
-                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                            <div class="w-16 h-16 bg-primary-mauve rounded-full flex items-center justify-center">
-                                <i class="fas fa-school text-primary-light text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="flex-grow">
-                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                                <div>
-                                    <h4 class="text-xl font-semibold text-primary-dark">PCMC (Class XII)</h4>
-                                    <p class="text-primary-mauve">Pre-University Course</p>
-                                    <p class="text-primary-mauve font-medium">VBR PU College, Bangalore</p>
-                                </div>
-                                <div class="text-right mt-2 md:mt-0">
-                                    <p class="text-primary-dark font-semibold">2020 - 2022</p>
-                                    <p class="text-primary-mauve">88.5%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- High School -->
-                    <div
-                        class="flex flex-col md:flex-row items-start md:items-center bg-gradient-to-r from-primary-light to-white p-6 rounded-xl shadow-md border border-primary-pink">
-                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                            <div class="w-16 h-16 bg-primary-rose rounded-full flex items-center justify-center">
-                                <i class="fas fa-graduation-cap text-primary-light text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="flex-grow">
-                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                                <div>
-                                    <h4 class="text-xl font-semibold text-primary-dark">High School (Class X)</h4>
-                                    <p class="text-primary-mauve">ICSE Board</p>
-                                    <p class="text-primary-rose font-medium">Maruthi Vidyalaya, Bangalore</p>
-                                </div>
-                                <div class="text-right mt-2 md:mt-0">
-                                    <p class="text-primary-dark font-semibold">2020</p>
-                                    <p class="text-primary-mauve">82.33%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certifications -->
+        <div class="specsheet">
+          <h3 class="mono specsheet__title">EDUCATION</h3>
+          <dl>
             <div>
-                <h3 class="text-2xl font-semibold text-primary-dark mb-8 text-center">Certifications</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=AAAC0AA78781F1F83C3BF570DE565D525A166AAF36DBFECA61D6588B3A254DC6"
-                        target="_blank"
-                        class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all hover:scale-105 border-2 border-primary-pink">
-                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#F80000" />
-                                <path d="M2 17L12 22L22 17" stroke="#F80000" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M2 12L12 17L22 12" stroke="#F80000" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <h4 class="text-lg font-semibold text-primary-dark mb-2">OCI AI Foundation Associate</h4>
-                        <p class="text-primary-mauve text-sm mb-2">Oracle Cloud Infrastructure</p>
-                    </a>
-
-                    <a href="https://moonshot.scaler.com/s/sl/3CIv-WU0Kn" target="_blank"
-                        class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all hover:scale-105 border-2 border-primary-pink">
-                        <div
-                            class="w-16 h-16 bg-primary-rose rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fab fa-aws text-primary-light text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-primary-dark mb-2">AWS Fundamentals</h4>
-                        <p class="text-primary-mauve text-sm mb-2">Scaler</p>
-                    </a>
-
-                    <a href="https://simpli-web.app.link/e/JMOwNbT61Vb" target="_blank"
-                        class="bg-gradient-to-br from-primary-light to-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all hover:scale-105 border-2 border-primary-pink">
-                        <div
-                            class="w-16 h-16 bg-primary-purple rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fab fa-python text-primary-light text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-primary-dark mb-2">Advanced Python</h4>
-                        <p class="text-primary-mauve text-sm mb-2">Infosys Springboard</p>
-                    </a>
-                </div>
+              <dt>B.Tech, Computer Science &amp; Engineering</dt>
+              <dd>Presidency University, Bengaluru · 2022–2026 · CGPA 7.10/10</dd>
             </div>
+            <div>
+              <dt>Class XII (PCMC)</dt>
+              <dd>VBR PU College, Bengaluru · 88.5%</dd>
+            </div>
+            <div>
+              <dt>Class X (ICSE)</dt>
+              <dd>Maruthi Vidyalaya, Bengaluru · 82.33%</dd>
+            </div>
+          </dl>
+          <h3 class="mono specsheet__title">CERTIFICATIONS</h3>
+          <ul>
+            <li>OCI AI Foundation Associate, Sep 2025</li>
+            <li>AWS Fundamentals, Scaler, Jul 2025</li>
+            <li>Advanced Python, Infosys Springboard, May 2025</li>
+          </ul>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-primary-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Get In Touch</h2>
-                <p class="text-primary-mauve max-w-2xl mx-auto">
-                    I'm always open to discussing new opportunities, collaborative projects, or just having a chat about
-                    technology
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-2xl font-semibold text-primary-dark mb-6">Let's Connect</h3>
-                    <p class="text-primary-mauve mb-8">
-                        Whether you're looking for a passionate developer to join your team, want to collaborate on a
-                        project,
-                        or just want to network, I'd love to hear from you!
-                    </p>
-
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-primary-purple text-xl mr-4"></i>
-                            <div>
-                                <p class="text-primary-dark font-medium">Email</p>
-                                <a href="mailto:prajwalp5078@gmail.com"
-                                    class="text-primary-mauve hover:text-primary-purple transition-colors">
-                                    prajwalp5078@gmail.com
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center">
-                            <i class="fas fa-phone text-primary-purple text-xl mr-4"></i>
-                            <div>
-                                <p class="text-primary-dark font-medium">Phone</p>
-                                <a href="tel:+918310762991"
-                                    class="text-primary-mauve hover:text-primary-purple transition-colors">
-                                    +91-83107262991
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-primary-purple text-xl mr-4"></i>
-                            <div>
-                                <p class="text-primary-dark font-medium">Location</p>
-                                <p class="text-primary-mauve">Bangalore, India</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8">
-                        <p class="text-primary-dark font-medium mb-4">Follow me on social media:</p>
-                        <div class="flex space-x-4">
-                            <a href="https://github.com/prjawal21" target="_blank"
-                                class="bg-primary-purple hover:bg-primary-mauve p-3 rounded-lg transition-colors">
-                                <i class="fab fa-github text-primary-light text-xl"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/prajwal-p-822169257/" target="_blank"
-                                class="bg-primary-purple hover:bg-primary-mauve p-3 rounded-lg transition-colors">
-                                <i class="fab fa-linkedin text-primary-light text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-primary-pink">
-                    <form id="contact-form" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-primary-dark mb-2">Name</label>
-                            <input type="text" id="name" name="name" required
-                                class="w-full px-4 py-2 border-2 border-primary-pink rounded-lg focus:ring-2 focus:ring-primary-purple focus:border-transparent">
-                        </div>
-
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-primary-dark mb-2">Email</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-2 border-2 border-primary-pink rounded-lg focus:ring-2 focus:ring-primary-purple focus:border-transparent">
-                        </div>
-
-                        <div>
-                            <label for="subject"
-                                class="block text-sm font-medium text-primary-dark mb-2">Subject</label>
-                            <input type="text" id="subject" name="subject" required
-                                class="w-full px-4 py-2 border-2 border-primary-pink rounded-lg focus:ring-2 focus:ring-primary-purple focus:border-transparent">
-                        </div>
-
-                        <div>
-                            <label for="message"
-                                class="block text-sm font-medium text-primary-dark mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" required
-                                class="w-full px-4 py-2 border-2 border-primary-pink rounded-lg focus:ring-2 focus:ring-primary-purple focus:border-transparent resize-none"></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full bg-primary-purple hover:bg-primary-mauve text-primary-light font-medium py-3 px-6 rounded-lg transition-colors shadow-lg">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <!-- STACK -->
+    <section id="stack" class="stack">
+      <p class="eyebrow">CH.5: INSTRUMENTATION</p>
+      <h2 class="section-title">Stack</h2>
+      <div class="stack__grid">
+        <div class="stack__group">
+          <h3 class="mono">Machine Learning</h3>
+          <ul>
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+          </ul>
         </div>
+        <div class="stack__group">
+          <h3 class="mono">Computer Vision</h3>
+          <ul>
+            <li>OpenCV</li>
+            <li>CLIP</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3 class="mono">GenAI / LLM</h3>
+          <ul>
+            <li>LangChain</li>
+            <li>RAG</li>
+            <li>Groq API</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3 class="mono">Backend</h3>
+          <ul>
+            <li>FastAPI</li>
+            <li>Spring Boot</li>
+            <li>Node.js / Express</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3 class="mono">Frontend</h3>
+          <ul>
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3 class="mono">Data &amp; Cloud</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>AWS (EC2, S3)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-primary-dark text-primary-light py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h3 class="text-2xl font-bold mb-4">Prajwal P</h3>
-                <p class="text-primary-pink mb-6">Computer Science Engineering Student & Full Stack Enthusiast</p>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <p class="eyebrow">CH.6: SIGN-OFF</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="section-lede">
+        Looking for ML Engineer, Computer Vision, or GenAI Engineer roles in Bengaluru.
+        Reach me directly, or drop a note below.
+      </p>
+      <div class="contact__grid">
+        <ul class="contact__links">
+          <li><span class="mono">EMAIL</span><a href="mailto:prajwalp2125@gmail.com">prajwalp2125@gmail.com</a></li>
+          <li><span class="mono">PHONE</span><a href="tel:+918310762991">+91 83107 62991</a></li>
+          <li><span class="mono">GITHUB</span><a href="https://github.com/prjawal21" target="_blank"
+              rel="noopener">github.com/prjawal21</a></li>
+          <li><span class="mono">LINKEDIN</span><a href="https://linkedin.com/in/prajwal-p-822169257/" target="_blank"
+              rel="noopener">linkedin.com/in/prajwal-p</a></li>
+          <li><span class="mono">LOCATION</span><span>Bengaluru, India</span></li>
+        </ul>
+        <form class="contact__form" id="contactForm">
+          <label>Name <input type="text" name="name" required></label>
+          <label>Email <input type="email" name="email" required></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="contact__note mono" id="contactNote"></p>
+        </form>
+      </div>
+    </section>
 
-                <div class="flex justify-center space-x-6 mb-8">
-                    <a href="https://github.com/prjawal21" target="_blank"
-                        class="text-primary-pink hover:text-primary-light transition-colors">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/prajwal-p-822169257/" target="_blank"
-                        class="text-primary-pink hover:text-primary-light transition-colors">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                    <a href="mailto:prajwalp5078@gmail.com"
-                        class="text-primary-pink hover:text-primary-light transition-colors">
-                        <i class="fas fa-envelope text-xl"></i>
-                    </a>
-                </div>
+  </main>
 
-                <div class="border-t border-primary-purple pt-8">
-                    <p class="text-primary-pink text-sm">
-                        © 2025 Prajwal P. Built with passion for clean code and innovative solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <footer class="footer">
+    <p class="mono">© 2026 Prajwal P. Built while cleaning up someone else's noisy sensor data.</p>
+  </footer>
 
-    <!-- Terminal Effect Script -->
-    <script src="js/terminal-effect.js"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="js/main.js"></script>
-
-    <!-- Initialize Terminal Effect -->
-    <script>
-        // Initialize terminal effect on page load
-        document.addEventListener('DOMContentLoaded', function () {
-            const terminalContainer = document.getElementById('terminal-container');
-            if (terminalContainer) {
-                new FaultyTerminal(terminalContainer, {
-                    scale: 1.5,
-                    gridMul: [2, 1],
-                    digitSize: 1.2,
-                    timeScale: 0.8,
-                    pause: false,
-                    scanlineIntensity: 0.6,
-                    glitchAmount: 0.5,
-                    flickerAmount: 0.4,
-                    noiseAmp: 1,
-                    chromaticAberration: 0,
-                    dither: 0,
-                    curvature: 0,
-                    tint: '#DFB6B2',
-                    mouseReact: true,
-                    mouseStrength: 0.3,
-                    pageLoadAnimation: true,
-                    brightness: 0.6
-                });
-            }
-        });
-    </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
