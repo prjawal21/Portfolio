@@ -181,17 +181,6 @@ Or just open `index.html` directly in your browser.
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=prjawal21&show_icons=true&theme=github_dark&hide_border=true&bg_color=12151A&title_color=F2A93B&icon_color=4FD1C5&text_color=ECEAE4" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prjawal21&layout=compact&theme=github_dark&hide_border=true&bg_color=12151A&title_color=F2A93B&text_color=ECEAE4" height="165" />
-
-</div>
-
----
-
 ## 🎓 Certifications
 
 | Certification | Issuer | Date |
